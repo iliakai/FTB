@@ -7,12 +7,12 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 
 
-public class FirstTB extends TelegramLongPollingBot{
+public class FiftyTB extends TelegramLongPollingBot{
     public static void main(String[] args) {
         ApiContextInitializer.init(); // Инициализируем апи
         TelegramBotsApi botapi = new TelegramBotsApi();
         try {
-            botapi.registerBot(new FirstTB());
+            botapi.registerBot(new FiftyTB());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
